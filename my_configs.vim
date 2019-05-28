@@ -26,3 +26,11 @@ nmap <c-z> "+gp
 imap <c-z> <esc>"+gpi
 nmap <c-a> ggVG
 imap <c-a> <esc>ggVG
+
+let g:nerdtree_tabs_open_on_console_startup=1
+
+
+let g:tagbar_right=1
+nmap <F10> :TagbarToggle<CR>
+autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
+

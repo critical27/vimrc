@@ -85,6 +85,7 @@ map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
 autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
 autocmd BufEnter * if 0 == len(filter(range(1, winnr('$')), 'empty(getbufvar(winbufnr(v:val), "&bt"))')) | qa! | endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
