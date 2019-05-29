@@ -27,8 +27,14 @@ imap <c-z> <esc>"+gpi
 nmap <c-a> ggVG
 imap <c-a> <esc>ggVG
 
+nmap <s-tab> :tabnext<cr>
+imap <s-tab> <ESC> :tabnext<cr>
+
 let g:nerdtree_tabs_open_on_console_startup=1
 
+map <95> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR> :TlistUpdate<CR>
+imap <F9> <ESC>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR> :TlistUpdate<CR>
+set tags=tags;
 
 let g:tagbar_right=1
 nmap <F10> :TagbarToggle<CR>
