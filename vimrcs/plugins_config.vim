@@ -27,7 +27,9 @@ map <leader>o :BufExplorer<cr>
 """"""""""""""""""""""""""""""
 " => MRU plugin
 """"""""""""""""""""""""""""""
-let MRU_Max_Entries = 400
+let MRU_Max_Entries = 200
+let MRU_Use_Current_Window = 1
+
 map <leader>f :MRU<CR>
 
 
