@@ -30,7 +30,7 @@ imap <c-a> <esc>ggVG
 nmap <s-tab> :tabnext<cr>
 imap <s-tab> <ESC> :tabnext<cr>
 
-let g:nerdtree_tabs_open_on_console_startup=1
+map <leader>tt :terminal<cr>
 
 map <F9> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 imap <F9> <ESC>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
